@@ -1,6 +1,6 @@
 
 abstract interface Shape {
-	double pi=22/7;
+	double pi=3.14;
 	abstract double area();
 
 }

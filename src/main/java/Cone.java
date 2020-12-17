@@ -10,6 +10,6 @@ public class Cone implements ThreeDShape {
         return (pi*radius*radius)+pi*radius*height;
     }
     public double volume() {
-        return 1/3*pi*radius*radius*height;
+        return pi*radius*radius*height/3;
     }
 }

@@ -10,11 +10,19 @@ public class TestRunner {
                 CubeAreaTest.class,
                 CubeVolumeTest.class,
                 SphereAreaTest.class,
-                SphereVolume.class,
-                SquareAreaTest.class
+                SphereVolumeTest.class,
+                SquareAreaTest.class,
+                ConeAreaTest.class,
+                ConeVolumeTest.class,
+                CylinderAreaTest.class,
+                CylinderVolumeTest.class,
+                EllipseAreaTest.class,
+                EquilateralTriangleAreaTest.class,
+                TriangleAreaTest.class
                 );
         for (Failure failure : result.getFailures()) {
             System.out.println(failure.toString());
         }
+        System.out.println("Success : "+result.wasSuccessful());
     }
 }
