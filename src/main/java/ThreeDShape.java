@@ -1,7 +1,6 @@
 
-public interface ThreeDShape {
+public interface ThreeDShape extends  Shape{
 	
 	abstract double volume();
-	abstract double area();
 
 }

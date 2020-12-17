@@ -1,7 +1,7 @@
 
-public class Circle extends Shape {
+public class Circle implements Shape {
 	
-	private double radius, pi, area;
+	private double radius, area;
 	
 	public Circle() {
 		
@@ -9,7 +9,6 @@ public class Circle extends Shape {
 	
 	public Circle(double radius) {
 		this.radius = radius;
-		this.pi = 3.14;
 		this.area = pi * radius * radius;
 	}
 

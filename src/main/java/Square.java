@@ -1,5 +1,5 @@
 
-public class Square extends Shape {
+public class Square implements Shape {
 	private double width, height, area;
 	
 	public Square() {
