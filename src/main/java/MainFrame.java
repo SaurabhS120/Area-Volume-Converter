@@ -194,17 +194,20 @@ public class MainFrame extends JFrame {
         JTextField radiusTextField=new JTextField();
         radiusTextField.setMaximumSize(dimension);
         JButton calculateButton=new JButton("Calculate");
-        JLabel sphereAnsLabel=new JLabel();
+        JLabel sphereAreaLabel=new JLabel();
+        JLabel sphereVolumeLabel=new JLabel();
         calculateButton.addActionListener(new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 int radius=Integer.parseInt(radiusTextField.getText());
-                sphereAnsLabel.setText("ans : "+new Sphere(radius).area());
+                sphereAreaLabel.setText("Area : "+new Sphere(radius).area());
+                sphereVolumeLabel.setText("Volume : "+new Sphere(radius).volume());
             }
         });
         spherePanel.add(radiusTextField);
         spherePanel.add(calculateButton);
-        spherePanel.add(sphereAnsLabel);
+        spherePanel.add(sphereAreaLabel);
+        spherePanel.add(sphereVolumeLabel);
         return spherePanel;
     }
 
