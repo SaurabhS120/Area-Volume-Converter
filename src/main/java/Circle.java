@@ -1,14 +1,13 @@
 
 public class Circle implements Shape {
-	
-	private double radius, area;
+
+	private double area;
 	
 	public Circle() {
 		
 	}
 	
 	public Circle(double radius) {
-		this.radius = radius;
 		this.area = pi * radius * radius;
 	}
 

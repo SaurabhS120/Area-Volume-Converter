@@ -1,4 +1,3 @@
-import java.math.*;
 public class EquilateralTriangle implements Shape{
     double side;
 

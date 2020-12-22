@@ -32,7 +32,7 @@ public class MainFrame extends JFrame {
         super("Shape Area Calculator");
         frame=this;
         dimension=new Dimension(400,40);
-        String shapes[]={"none","Circle","Cube","Square","Sphere","Cone","Cylinder","Ellipse","Equilateral Triangle","Triangle"};
+        String[] shapes ={"none","Circle","Cube","Square","Sphere","Cone","Cylinder","Ellipse","Equilateral Triangle","Triangle"};
         JComboBox comboBox=new JComboBox(shapes);
         comboBox.setMaximumSize(dimension);
         panel=new JPanel();
