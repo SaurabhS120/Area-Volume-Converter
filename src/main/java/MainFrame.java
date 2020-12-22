@@ -124,7 +124,7 @@ public class MainFrame extends JFrame {
         calcRadius.addActionListener(new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                int radius=Integer.parseInt(radiusTextField.getText());
+                double radius=Double.parseDouble(radiusTextField.getText());
                 circleAnsLabel.setText("ans : "+new Circle(radius).area());
             }
         });
@@ -145,9 +145,9 @@ public class MainFrame extends JFrame {
         calculateButton.addActionListener(new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                int size;
+                double size;
                 Cube cube;
-                size=Integer.parseInt(sideTextField.getText());
+                size=Double.parseDouble(sideTextField.getText());
                 cube=new Cube(size);
                 areaLabel.setText("Area : "+cube.area());
                 volumeLabel.setText("Volume : "+cube.volume());
@@ -176,8 +176,8 @@ public class MainFrame extends JFrame {
         calculateButton.addActionListener(new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                int height=Integer.parseInt(heightTextField.getText());
-                int width=Integer.parseInt(widthTextField.getText());
+                double height=Double.parseDouble(heightTextField.getText());
+                double width=Double.parseDouble(widthTextField.getText());
                 Square square=new Square(width,height);
                 areaLabel.setText("Area : "+square.area());
             }
@@ -199,7 +199,7 @@ public class MainFrame extends JFrame {
         calculateButton.addActionListener(new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                int radius=Integer.parseInt(radiusTextField.getText());
+                double radius=Double.parseDouble(radiusTextField.getText());
                 sphereAreaLabel.setText("Area : "+new Sphere(radius).area());
                 sphereVolumeLabel.setText("Volume : "+new Sphere(radius).volume());
             }
@@ -229,8 +229,8 @@ public class MainFrame extends JFrame {
         calculateButton.addActionListener(new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                int height=Integer.parseInt(heightTextField.getText());
-                int radius=Integer.parseInt(radiusTextField.getText());
+                double height=Double.parseDouble(heightTextField.getText());
+                double radius=Double.parseDouble(radiusTextField.getText());
                 Cone cone=new Cone(height,radius);
                 areaLabel.setText("Area : "+cone.area());
                 volumeLabel.setText("Volume : "+cone.volume());
@@ -260,8 +260,8 @@ public class MainFrame extends JFrame {
         calculateButton.addActionListener(new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                int height=Integer.parseInt(heightTextField.getText());
-                int radius=Integer.parseInt(radiusTextField.getText());
+                double height=Double.parseDouble(heightTextField.getText());
+                double radius=Double.parseDouble(radiusTextField.getText());
                 Cylinder cylinder=new Cylinder(height,radius);
                 areaLabel.setText("Area : "+cylinder.area());
                 volumeLabel.setText("Volume : "+cylinder.volume());
@@ -288,8 +288,8 @@ public class MainFrame extends JFrame {
         calculateButton.addActionListener(new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                int major=Integer.parseInt(majorTextField.getText());
-                int minor=Integer.parseInt(minorTextField.getText());
+                double major=Double.parseDouble(majorTextField.getText());
+                double minor=Double.parseDouble(minorTextField.getText());
                 Ellipse ellipse=new Ellipse(minor,major);
                 areaLabel.setText("Area : "+ellipse.area());
             }
@@ -311,7 +311,7 @@ public class MainFrame extends JFrame {
         calcButton.addActionListener(new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                int size=Integer.parseInt(sizeTextField.getText());
+                double size=Double.parseDouble(sizeTextField.getText());
                 circleAnsLabel.setText("ans : "+new EquilateralTriangle(size).area());
             }
         });
@@ -337,8 +337,8 @@ public class MainFrame extends JFrame {
         calcRadius.addActionListener(new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                int height=Integer.parseInt(heightTextField.getText());
-                int base=Integer.parseInt(baseTextField.getText());
+                double height=Double.parseDouble(heightTextField.getText());
+                double base=Double.parseDouble(baseTextField.getText());
                 triangleAnsLabel.setText("ans : "+new Triangle(height,base).area());
             }
         });

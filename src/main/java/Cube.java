@@ -1,9 +1,9 @@
 
 public class Cube extends Square implements ThreeDShape {
 
-	private int side, area, volume;
+	private double side, area, volume;
 	
-	public Cube(int side) {
+	public Cube(double side) {
 		this.side = side;
 		this.area = side * side * 6;
 		this.volume = side * side * side;
